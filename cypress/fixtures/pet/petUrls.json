@@ -1,5 +1,5 @@
 {
 
-"findPetsUrl":"https://petstore.swagger.io/v2/pet/findByStatus?status=available"
-
+"findPetsUrl":"https://petstore.swagger.io/v2/pet/findByStatus?status=available",
+"createPetsUrl":"https://petstore.swagger.io/v2/pet"
 }

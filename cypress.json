@@ -1,1 +1,14 @@
-{}
+{
+
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "cypress/test-reports",
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "html": true,
+    "json": false
+      }
+
+
+
+}
