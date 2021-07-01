@@ -20,7 +20,7 @@ cy.fixture("pet/createPets_200").then(function(dataCreatePets_200){
 
 
 it('Verify 200 Response for Get Pets Request', function() {
-
+    
     //send the get request
     cy.request('GET',this.dataPetsUrl.findPetsUrl).then(
       (response) => {
@@ -59,6 +59,32 @@ it('Verify 200 Response for Add New Pet Request', function(){
 
 
   })
+
+
+
+  it('Verify 200 Response for Update a Pet Request', function(){
+
+    var postRequest ={
+  
+          method : "PUT",
+          url:this.dataPetsUrl.updatePetsUrl,
+          body:this.dataCreatePets_200
+  
+    }
+          cy.request(postRequest).then(
+              (response) => {
+                //verify 200 response was received
+                expect(response.status).to.eq(200),
+                 //verify properties
+                expect(response.body).to.have.property('name','doggie') 
+                expect(response.body).to.have.property('status','available') 
+              }
+            )
+  
+  
+    })
+
+
 
 
 
