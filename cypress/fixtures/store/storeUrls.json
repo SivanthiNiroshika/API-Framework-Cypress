@@ -1,0 +1,9 @@
+{
+
+    "getPetInventoriesByStatus":"https://petstore.swagger.io/v2/store/inventory",
+    "orderPetFromStore":"https://petstore.swagger.io/v2/store/order"
+    
+   
+    
+    
+    }
