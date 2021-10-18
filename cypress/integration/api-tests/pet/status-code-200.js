@@ -52,7 +52,7 @@ describe('API scripts - Pet Module', function () {
         //verify 200 response was received
         expect(response.status).to.eq(200),
           //verify properties
-          expect(response.body).to.have.property('name', 'doggie')
+        expect(response.body).to.have.property('name', 'doggie')
         expect(response.body).to.have.property('status', 'available')
       }
     )
@@ -75,8 +75,8 @@ describe('API scripts - Pet Module', function () {
       (response) => {
         //verify 200 response was received
         expect(response.status).to.eq(200),
-          //verify properties
-          expect(response.body).to.have.property('name', 'doggie')
+        //verify properties
+        expect(response.body).to.have.property('name', 'doggie')
         expect(response.body).to.have.property('status', 'available')
       }
     )
